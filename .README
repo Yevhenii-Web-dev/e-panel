@@ -1,0 +1,14 @@
+## How install project 
+
+# Steps
+1. First you need clone all files to your server with command
+"git clone https://github.com/Yevhenii-Web-dev/e-panel.git"
+2. Create database in phpMyAdmin
+2. After that you need in file config/database.php make connect to your DB
+3. Open app in your browser
+3. Next create tables press button "Seed Data"
+4. Next you can manipulate with USERS and GROUPS
+
+## Required
+
+- php 8.+

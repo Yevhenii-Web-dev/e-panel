@@ -19,7 +19,7 @@ $users = $obj->index();
         <div class="py-20">
             <?php
             include_once $_SERVER['DOCUMENT_ROOT'] . '/views/partials/message.php'; ?>
-            <div class="hidden space-x-2 md:flex justify-end mb-12">
+            <div class=" space-x-2 flex justify-end mb-12">
 
                 <a title="Add user" href="/views/user/create.php/?seedDb"
                    class="transition duration-500 text-gray-200 group inline-flex items-center rounded-md bg-green-800 text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2  px-4 py-2 hover:rounded-md hover:text-white   hover:bg-green-600">
@@ -33,9 +33,7 @@ $users = $obj->index();
                 <div class=" flex items-center justify-center ">
 
                     <div class=" flex items-center justify-center ">
-
-
-                        <div class="overflow-x-auto relative">
+                        <div class="overflow-x-auto relative z-10">
                             <table class="w-full text-sm text-left  text-gray-400">
                                 <thead
                                         class="text-xs  uppercase bg-gray-700 text-gray-400">

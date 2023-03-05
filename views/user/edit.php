@@ -83,7 +83,7 @@ $items = $obj1->index();
                                 <?php
                                 foreach ($items as $item): ?>
                                     <?php
-                                        $checked = in_array($item['id'], $allUserGroups) ? 'checked' : '';
+                                    $checked = in_array($item['id'], $allUserGroups) ? 'checked' : '';
                                     ?>
                                     <li>
                                         <div class="flex items-center p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
@@ -108,15 +108,17 @@ $items = $obj1->index();
                     </div>
                 </div>
             </div>
-            <input type="text" hidden name="action" value="update_user">
-            <button type="submit" title="Update order button"
-                class="text-white bg-indigo-600 hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800">
-                Update User
-            </button>
-            <a href="/views/user/index.php/?seedDb" title="Back to users list"
-                class="text-white ml-3 bg-pink-600  hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-pink-600 dark:hover:bg-pink-700 dark:focus:ring-indigo-800">
-                Back
-            </a>
+            <div class="space-9 flex lg:flex-col">
+                <button type="submit" title="Update order button"
+                    class="text-white bg-indigo-600 hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800">
+                    Update User
+                </button>
+                <a href="/views/user/index.php/?seedDb" title="Back to users list"
+                    class="text-white ml-3 bg-pink-600  hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-pink-600 dark:hover:bg-pink-700 dark:focus:ring-indigo-800">
+                    Back
+                </a>
+            </div>
+
         </form>
         <!--FORM-->
     </div>
